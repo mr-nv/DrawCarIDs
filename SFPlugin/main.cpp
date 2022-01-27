@@ -44,15 +44,15 @@ bool CALLBACK Present( CONST RECT* pSourceRect, CONST RECT* pDestRect, HWND hDes
 						CVector2D pos2d;
 
 						// https://www.blast.hk/threads/11275/post-98104
-						// íó è ÕÓÉÍß
+						// Ğ½Ñƒ Ğ¸ Ğ¥Ğ£Ğ™ĞĞ¯
 						pos.fX = gta->base.matrix[ 4 * 3 ];
 						pos.fY = gta->base.matrix[ 4 * 3 + 1 ];
 						pos.fZ = gta->base.matrix[ 4 * 3 + 2 ];
 
 						sf->getGame( )->convert3DCoordsToScreen( pos.fX, pos.fY, pos.fZ, &pos2d.fX, &pos2d.fY );
 
-						// ıòî ïğîåáûâàåòñÿ è åñëè òû íå ñìîòğèøü íà ìàøèíó è òû äàëåêî òî îíî â ğàíäîì ìåñòå íà ıêğàíå ğèñóåò èä
-						// íî ìíå ÏÎÎÕÓÓÓÓÓÓÓÓÓÓÓÉéééééééééééééééééééé
+						// ÑÑ‚Ğ¾ Ğ¿Ñ€Ğ¾ĞµĞ±Ñ‹Ğ²Ğ°ĞµÑ‚ÑÑ Ğ¸ ĞµÑĞ»Ğ¸ Ñ‚Ñ‹ Ğ½Ğµ ÑĞ¼Ğ¾Ñ‚Ñ€Ğ¸ÑˆÑŒ Ğ½Ğ° Ğ¼Ğ°ÑˆĞ¸Ğ½Ñƒ Ğ¸ Ñ‚Ñ‹ Ğ´Ğ°Ğ»ĞµĞºĞ¾ Ñ‚Ğ¾ Ğ¾Ğ½Ğ¾ Ğ² Ñ€Ğ°Ğ½Ğ´Ğ¾Ğ¼ Ğ¼ĞµÑÑ‚Ğµ Ğ½Ğ° ÑĞºÑ€Ğ°Ğ½Ğµ Ñ€Ğ¸ÑÑƒĞµÑ‚ Ğ¸Ğ´
+						// Ğ½Ğ¾ Ğ¼Ğ½Ğµ ĞŸĞĞĞ¥Ğ£Ğ£Ğ£Ğ£Ğ£Ğ£Ğ£Ğ£Ğ£Ğ£Ğ£Ğ™Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹Ğ¹
 						if( pos2d.fX > 0 && pos2d.fY > 0 )
 						{
 							char id[ 12 ];
@@ -75,12 +75,12 @@ void CALLBACK Callback_DrawIDs( std::string param )
 	if( shoulddraw )
 	{
 		shoulddraw = false;
-		PrintMessage( "Âûêëş÷åíî" );
+		PrintMessage( "Ğ’Ñ‹ĞºĞ»ÑÑ‡ĞµĞ½Ğ¾" );
 	}
 	else
 	{
 		shoulddraw = true;
-		PrintMessage( "Âêëş÷åíî" );
+		PrintMessage( "Ğ’ĞºĞ»ÑÑ‡ĞµĞ½Ğ¾" );
 	}
 }
 
